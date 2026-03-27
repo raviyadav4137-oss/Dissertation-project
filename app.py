@@ -118,7 +118,7 @@ st.set_page_config(
 # ── Header ────────────────────────────────────────────────────────────────────
 st.title("🛡️ Explainable Malware Detection System (EMDS)")
 st.markdown(
-    "**Dissertation Project KAS_004** — Interactive SOC Analyst Dashboard  \n"
+    "**Dissertation Project ** — Interactive SOC Analyst Dashboard  \n"
     "Classifies Windows PE samples using XGBoost and explains predictions via SHAP and LIME."
 )
 st.divider()
@@ -158,7 +158,7 @@ with st.sidebar:
     show_global  = st.checkbox("Show global SHAP summary", value=True)
     show_compare = st.checkbox("Show SHAP vs LIME comparison", value=True)
     st.divider()
-    st.caption("EMDS — KAS_004 Dissertation  \nStreamlit Prototype v1.0")
+    st.caption("EMDS — Dissertation  \nStreamlit Prototype v1.0")
 
 # ── Selected Sample ───────────────────────────────────────────────────────────
 X_sample = X_test[sample_idx:sample_idx + 1]
@@ -260,4 +260,4 @@ if os.path.exists(roc_path):
     st.image(roc_path, caption=f"ROC Curve — {model_choice}", width=450)
 
 st.divider()
-st.caption("EMDS Prototype | KAS_004 Dissertation | For Academic Use Only")
+st.caption("EMDS Prototype | Dissertation | For Academic Use Only")
